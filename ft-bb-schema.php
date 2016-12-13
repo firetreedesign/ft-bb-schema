@@ -107,7 +107,7 @@ final class FTBBSchema {
 		$thing = $row->settings->ft_bb_schema_thing;
 
 		if ( 'none' !== $thing && strlen( $thing ) > 0 ) {
-			echo '<' . esc_html( FTBBSchema::get_element( $thing ) ) . ' class="ft-bb-schema" itemscope itemtype="http://schema.org/' .  esc_attr( $thing ) . '">';
+			echo '<' . esc_html( FTBBSchema::get_element( $thing ) ) . ' class="ft-bb-schema" itemscope itemtype="http://schema.org/' . esc_attr( $thing ) . '">';
 		}
 
 	}
